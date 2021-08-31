@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input placeholder="value1" id="val1" type="number">
+    <input placeholder="value2" id="val2" type="number">
+    <input placeholder="result" id="result" type="number">
+    <button onclick="minus()"> <a href=""></a>-</button>
+    <button onclick="division()"> <a href=""></a>/</button>
+    <button onclick="times()"> <a href=""></a>*</button>
+
+    <script>
+        function minus() {
+            if(val1.value !== '' && val2.value !== '') {
+                result.value=val1.value-val2.value
+            }
+            else {
+                alert ("Please enter a value")
+            }
+        }
+        function times() {
+            if(val1.value !== "" && val2.value !== "") {
+                result.value=val1.value*val2.value
+            }
+            else {
+                alert ("Please enter a value")
+            }
+        }
+        function division() {
+            if(val1.value!== "" && val2.value!== "") {
+                result.value=val1.value/val2.value
+            }
+            else {
+                alert ("Please enter a value")
+            }
+        }
+    </script>
+</body>
+</html>
